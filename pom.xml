@@ -33,9 +33,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.3.0</muleVersion>
-						<server>cloudhub</server>
-						<!--  username>anvesh_pagadala</username>
-						<password>Anvesh123</password-->
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
 						<applicationName>cicd-demo-12</applicationName>
 						<environment>dev</environment>
 						<region>us-east-2</region>
@@ -47,7 +46,7 @@
 							<mule.env>dev</mule.env>
      					 </properties>
   				  </cloudHubDeployment>
-  </configuration>
+ 			 </configuration>
 			</plugin>
 		</plugins>
 	</build>
